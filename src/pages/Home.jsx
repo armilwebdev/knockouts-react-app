@@ -1,5 +1,6 @@
 import React from 'react'
 import Register from '../components/Register';
+import Button from '../components/Button'; // Adjust the import path as necessary
 
 function Home(){
 
@@ -19,13 +20,9 @@ function Home(){
               <p className="text-xl font-medium text-center mt-4 italic">November 4th @ 7:30PM!</p>
               <p className="text-xl font-medium text-center italic">Bowlero River Grove</p>
 
-              <button className="bg-blue-500 text-white font-semibold py-2 mt-4
-                            px-4 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 
-                            focus:ring-blue-500 focus:ring-opacity-50 text-lg"
-                            onClick={handleRegisterClick}
-                            >
-                REGISTER!
-              </button>        
+
+              <Button  onClick={handleRegisterClick}>REGISTER</Button>
+    
         </div>
       </div>
   </div>
